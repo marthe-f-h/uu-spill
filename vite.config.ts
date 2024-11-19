@@ -3,9 +3,5 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  build: {
-		target: 'esnext',
-		outDir: 'build'
-	},
-  plugins: [react()],
+	plugins: [react()]
 })
