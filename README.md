@@ -1,4 +1,3 @@
-# uu spill julespesial
+# uu spill
 
-Test nettsiden med en skjermleser
-
+Test nettsiden med en skjermleser https://marthe-f-h.github.io/uuSpillPiratskatten
