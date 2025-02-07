@@ -2,7 +2,7 @@
   "name": "uugame",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://marthe-f-h.github.io/uuSpillJulespesial",
+  "homepage": "https://marthe-f-h.github.io/uuSpillPiratskatten",
   "type": "module",
   "scripts": {
     "start": "vite",
