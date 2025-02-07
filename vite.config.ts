@@ -7,6 +7,6 @@ export default defineConfig({
 	build: {
 		outDir: 'build'
 	},
-	base: '/uuSpillPiratskatten/',
+	base: '/uuSpill/',
 	plugins: [react(), tailwindcss()]
 })

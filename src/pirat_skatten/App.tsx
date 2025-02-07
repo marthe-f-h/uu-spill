@@ -11,7 +11,7 @@ function App() {
 		// className="sr-only"
 		<main>
 			<Routes>
-				<Route path="/uuSpillPiratskatten" element={<Home />} />
+				<Route path="/uuSpill" element={<Home />} />
 				<Route
 					path="/grottens_historie"
 					element={<GrottensHistorie />}

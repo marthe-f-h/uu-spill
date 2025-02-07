@@ -4,7 +4,7 @@ function GrottensHistorie() {
 	document.title = 'uu spill - grottens historie'
 	return (
 		<div>
-			<Link to={'/uuSpillPiratskatten'}>Gå tilbake til skipsvraket</Link>
+			<Link to={'/uuSpill'}>Gå tilbake til skipsvraket</Link>
 			<h1>Grottens historie</h1>
 			<p>
 				Denne grotten har eksistert siden tidenes morgen. Den sies å ha
