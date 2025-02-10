@@ -10,7 +10,7 @@ const basePath = '/uuSpill'
 
 function App() {
 	return (
-		<main className="sr-only">
+		<main>
 			<Routes>
 				<Route path={basePath} element={<Start />} />
 				<Route
