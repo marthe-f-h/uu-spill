@@ -13,9 +13,9 @@ function Skattekartet() {
 				alt="Skattekart som viser vegen fra skuta, rundt palmetreet og frem til grotten der skatten er."
 				width="500"
 			></img>
-			<Link to={'/uuSpill'}>Gå til skipsvraket</Link>
-			<Link to={'/uuSpill'}>Gå til havet</Link>
-			<Link to={'/papegoyensHemmelighet'}>Gå til grotten</Link>
+			<Link to={'/uuSpill'}>Gå til skipsvraket</Link>{' '}
+			<Link to={'/uuSpill'}>Gå til havet</Link>{' '}
+			<Link to={'/uuSpill/papegoyensHemmelighet'}>Gå til grotten</Link>
 		</div>
 	)
 }

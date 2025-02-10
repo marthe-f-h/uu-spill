@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function Home() {
+function Start() {
 	document.title = 'uu spill - skipsvraket'
 	const [kode, setKode] = useState('')
-	const [harRiktigKode, setHarRiktigKode] = useState(false)
+	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
 	const brukKode = (testKode: string) => {
 		setHarRiktigKode(testKode === '200')
@@ -21,7 +21,9 @@ function Home() {
 			</p>
 			<h2>Kaptein Grønnskjeggs grotte</h2>
 			<p>For lenge siden bodde Kaptein Grønnskjegg i denne grotten. </p>
-			<Link to={'/grottens_historie'}>Les mer om grottens historie.</Link>
+			<Link to={'/uuSpill/grottens_historie'}>
+				Les mer om grottens historie.
+			</Link>
 			<h2>Skattekartet</h2>
 			Du finner en kiste med kodelås. Du må finne koden for å åpne kisten.
 			<form
@@ -43,14 +45,19 @@ function Home() {
 			</form>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden var riktig. Vil du finne skatten?{' '}
-					<Link to={'/skattekartet'}>
+					Koden er riktig! Vil du finne skatten?{' '}
+					<Link to={'/uuSpill/skattekartet'}>
 						Da må du lese skattekartet her.
 					</Link>
+				</p>
+			)}
+			{harRiktigKode === false && (
+				<p className="mt-8" role="alert">
+					Koden er feil. Lær mer om grottens historie og prøv igjen.
 				</p>
 			)}
 		</div>
 	)
 }
 
-export default Home
+export default Start

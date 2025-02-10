@@ -1,26 +1,33 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './Home'
+import Start from './Start'
 import GrottensHistorie from './GrottensHistorie'
 import Skattekartet from './Skattekartet'
 import Papegoyen from './Papegoyen'
 import Skatten from './Skatten'
 import HjemmeIgjen from './HjemmeIgjen'
 
+const basePath = '/uuSpill'
+
 function App() {
 	return (
-		// className="sr-only"
-		<main>
+		<main className="sr-only">
 			<Routes>
-				<Route path="/uuSpill" element={<Home />} />
+				<Route path={basePath} element={<Start />} />
 				<Route
-					path="/grottens_historie"
+					path={`${basePath}/grottens_historie`}
 					element={<GrottensHistorie />}
 				/>
-				<Route path="/skattekartet" element={<Skattekartet />} />
-				<Route path="/papegoyensHemmelighet" element={<Papegoyen />} />
+				<Route
+					path={`${basePath}/skattekartet`}
+					element={<Skattekartet />}
+				/>
+				<Route
+					path={`${basePath}/papegoyensHemmelighet`}
+					element={<Papegoyen />}
+				/>
 
-				<Route path="/skatten" element={<Skatten />} />
-				<Route path="/hjem" element={<HjemmeIgjen />} />
+				<Route path={`${basePath}/skatten`} element={<Skatten />} />
+				<Route path={`${basePath}/hjem`} element={<HjemmeIgjen />} />
 			</Routes>
 		</main>
 	)

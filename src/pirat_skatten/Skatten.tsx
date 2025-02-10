@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Skatten() {
 	document.title = 'uu spill - skatten'
 	const [kode, setKode] = useState<boolean[]>([false, false, false, false])
-	const [harRiktigKode, setHarRiktigKode] = useState(false)
+	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
 	const oppdaterKode = (index: number) => {
 		const nyKode = [...kode]
@@ -85,8 +85,13 @@ function Skatten() {
 			</form>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden var riktig! Skattekisten er fri.
-					<Link to={'/hjem'}>Dra hjem med skatten.</Link>
+					Koden er riktig! Skattekisten er fri.
+					<Link to={'/uuSpill/hjem'}>Dra hjem med skatten.</Link>
+				</p>
+			)}
+			{harRiktigKode === false && (
+				<p className="mt-8" role="alert">
+					Koden er feil. Finn ut hva hulemaleriet viser og prøv igjen.
 				</p>
 			)}
 		</div>

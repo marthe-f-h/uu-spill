@@ -5,7 +5,7 @@ function Papegoyen() {
 	document.title = 'uu spill - grotten'
 
 	const [kode, setKode] = useState('')
-	const [harRiktigKode, setHarRiktigKode] = useState(false)
+	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
 	const brukKode = (testKode: string) => {
 		setHarRiktigKode(testKode.toUpperCase() === 'KRAKEN')
@@ -53,9 +53,16 @@ function Papegoyen() {
 			</form>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden var riktig! En stor stein i det møtrkeste hjørnet
-					beveger seg.
-					<Link to={'/skatten'}>Gå gjennom den hemmelige døren.</Link>
+					Koden er riktig! En stor stein i det møtrkeste hjørnet
+					beveger seg.{' '}
+					<Link to={'/uuSpill/skatten'}>
+						Gå gjennom den hemmelige døren.
+					</Link>
+				</p>
+			)}
+			{harRiktigKode === false && (
+				<p className="mt-8" role="alert">
+					Koden er feil. Hør hva papegøyen synger om og prøv igjen.
 				</p>
 			)}
 		</div>
