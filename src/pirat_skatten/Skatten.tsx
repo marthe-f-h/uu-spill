@@ -18,6 +18,7 @@ function Skatten() {
 
 	return (
 		<div>
+			<div></div>
 			<h1>Skatten</h1>
 			Du ser en stor kiste, men den er låst fast til en stor stein.
 			<h2>Hulemalerier</h2>
@@ -84,7 +85,7 @@ function Skatten() {
 			</form>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden var riktig! Skattekisten er løs.
+					Koden var riktig! Skattekisten er fri.
 					<Link to={'/hjem'}>Dra hjem med skatten.</Link>
 				</p>
 			)}

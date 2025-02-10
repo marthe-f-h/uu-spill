@@ -12,16 +12,16 @@ function Home() {
 
 	return (
 		<div>
+			<div></div>
 			<h1>Piratenes skatt</h1>
-			Du har nettopp satt anker ved en øde øy. Du står ved Kaptein
-			Grønnskjeggs skipsvrak på stranden. Du vet det finnes en skatt her
-			på øya, men du må finne den før øya forsvinner i havet.
-			<h2>Kaptein Grønnskjeggs grotte</h2>
 			<p>
-				For lenge siden bodde Kaptein Grønnskjegg i denne grotten.{' '}
-				<Link to={'/grottens_historie'}>Les mer</Link> om grottens
-				historie.
+				Du har nettopp satt anker ved en øde øy. Du står ved Kaptein
+				Grønnskjeggs skipsvrak på stranden. Du vet det finnes en skatt
+				her på øya, men du må finne den før øya forsvinner i havet.
 			</p>
+			<h2>Kaptein Grønnskjeggs grotte</h2>
+			<p>For lenge siden bodde Kaptein Grønnskjegg i denne grotten. </p>
+			<Link to={'/grottens_historie'}>Les mer om grottens historie.</Link>
 			<h2>Skattekartet</h2>
 			Du finner en kiste med kodelås. Du må finne koden for å åpne kisten.
 			<form
@@ -43,8 +43,10 @@ function Home() {
 			</form>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden var riktig. Vil du finne skatten? Da må du{' '}
-					<Link to={'/skattekartet'}>lese skattekartet her.</Link>
+					Koden var riktig. Vil du finne skatten?{' '}
+					<Link to={'/skattekartet'}>
+						Da må du lese skattekartet her.
+					</Link>
 				</p>
 			)}
 		</div>

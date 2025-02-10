@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Papegoyen() {
 	document.title = 'uu spill - grotten'
+
 	const [kode, setKode] = useState('')
 	const [harRiktigKode, setHarRiktigKode] = useState(false)
 
@@ -12,12 +13,13 @@ function Papegoyen() {
 
 	return (
 		<div>
+			<div></div>
 			<h1>Grotten</h1>
 			Etter å ha funnet grotten ser du en gammel papegøye.
-			<h2>Papegøyens hemmeloghet</h2>
+			<h2>Papegøyens hemmelighet</h2>
 			<p>
 				Papegøyen har en hemmelighet. Du prøver å snakke med den, men
-				alt den gjør er å synge sine gamle lister med alt den vet.
+				alt den gjør er å synge sine gamle lister om alt den vet.
 			</p>
 			<h3>Havet</h3>
 			<ul title="Gjenstander i havet">
@@ -51,7 +53,7 @@ function Papegoyen() {
 			</form>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden var riktig, og en stor stein i det møtrkeste hjørnet
+					Koden var riktig! En stor stein i det møtrkeste hjørnet
 					beveger seg.
 					<Link to={'/skatten'}>Gå gjennom den hemmelige døren.</Link>
 				</p>

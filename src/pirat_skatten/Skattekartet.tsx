@@ -5,8 +5,9 @@ function Skattekartet() {
 	document.title = 'uu spill - skattekartet'
 	return (
 		<div>
+			<div></div>
 			<Link to={'/uuSpill'}>Gå tilbake til skipsvraket</Link>
-			<h1>Julenissens favoritter</h1>
+			<h1>Skattekartet</h1>
 			<img
 				src={img}
 				alt="Skattekart som viser vegen fra skuta, rundt palmetreet og frem til grotten der skatten er."
