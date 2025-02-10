@@ -28,8 +28,10 @@ function Start() {
 					Les mer om grottens historie.
 				</Link>
 				<h2>Skattekartet</h2>
-				Du finner en kiste med kodelås. Du må finne koden for å åpne
-				kisten.
+				<p>
+					Du finner en kiste med kodelås. Du må finne koden for å åpne
+					kisten.
+				</p>
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
