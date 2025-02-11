@@ -12,23 +12,23 @@ function Start() {
 
 	return (
 		<div>
-			<div className="sr-only">
-				<h1>Piratenes skatt</h1>
-				<p>
+			<div>
+				<h1 className="text-3xl mb-8">Piratenes skatt</h1>
+				<p className="mb-4">
 					Du har nettopp satt anker ved en øde øy. Du står ved Kaptein
 					Grønnskjeggs skipsvrak på stranden. Du vet det finnes en
 					skatt her på øya, men du må finne den før øya forsvinner i
 					havet.
 				</p>
-				<h2>Kaptein Grønnskjeggs grotte</h2>
+				<h2 className="text-2xl mb-2">Kaptein Grønnskjeggs grotte</h2>
 				<p>
 					For lenge siden bodde Kaptein Grønnskjegg i denne grotten.{' '}
 				</p>
 				<Link to={'/uuSpill/grottens_historie'}>
 					Les mer om grottens historie.
 				</Link>
-				<h2>Skattekartet</h2>
-				<p>
+				<h2 className="mt-6 mb-2 text-2xl">Skattekartet</h2>
+				<p className="mb-2">
 					Du finner en kiste med kodelås. Du må finne koden for å åpne
 					kisten.
 				</p>
@@ -44,10 +44,13 @@ function Start() {
 							id="onske"
 							type="text"
 							value={kode}
+							className="border m-2"
 							onChange={(e) => setKode(e.target.value)}
 						/>
 					</label>
-					<button>Prøv koden</button>
+					<button className="cursor-pointer border pl-2 pr-2 bg-amber-50 text-black">
+						Prøv koden
+					</button>
 				</form>
 			</div>
 

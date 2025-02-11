@@ -86,7 +86,7 @@ function Skatten() {
 			</div>
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
-					Koden er riktig! Skattekisten er fri.
+					Koden er riktig! Skattekisten er fri.{' '}
 					<Link to={'/uuSpill/hjem'}>Dra hjem med skatten.</Link>
 				</p>
 			)}

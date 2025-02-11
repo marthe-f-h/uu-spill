@@ -2,10 +2,10 @@
 
 body {
     background-color: black;
-    color: white;
+    color: #FFF9F0;
 }
 
 a {
-    color: thistle;
+    color: #FFC2C2;
     text-decoration: underline;
 }
