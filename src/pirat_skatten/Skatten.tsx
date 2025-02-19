@@ -18,7 +18,7 @@ function Skatten() {
 
 	return (
 		<div>
-			<div className="sr-only">
+			<div>
 				<h1>Skatten</h1>
 				Du ser en stor kiste, men den er låst fast til en stor stein.
 				<h2>Hulemalerier</h2>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function GrottensHistorie() {
 	document.title = 'uu spill - grottens historie'
 	return (
-		<div className="sr-only">
+		<div>
 			<Link to={'/uuSpill'}>Gå tilbake til skipsvraket</Link>
 			<h1>Grottens historie</h1>
 			<p>

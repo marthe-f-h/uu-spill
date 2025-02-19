@@ -13,7 +13,7 @@ function Papegoyen() {
 
 	return (
 		<div>
-			<div className="sr-only">
+			<div>
 				<h1>Grotten</h1>
 				Etter å ha funnet grotten ser du en gammel papegøye.
 				<h2>Papegøyens hemmelighet</h2>

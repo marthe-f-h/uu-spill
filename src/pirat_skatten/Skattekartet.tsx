@@ -4,7 +4,7 @@ import img from './Skattekart.png'
 function Skattekartet() {
 	document.title = 'uu spill - skattekartet'
 	return (
-		<div className="sr-only">
+		<div>
 			<Link to={'/uuSpill'}>Gå tilbake til skipsvraket</Link>
 			<h1>Skattekartet</h1>
 			<img
