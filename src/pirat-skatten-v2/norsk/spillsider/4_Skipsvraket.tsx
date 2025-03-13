@@ -18,10 +18,10 @@ export const Skipsvraket = () => {
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					Skipsvraket
 				</h1>
+				<Link to={skattekartetUrl}>Gå tilbake</Link>
 				<p className="mb-4">
 					Her var det bare et skipsvrak, gå tilbake.
 				</p>
-				<Link to={skattekartetUrl}>Gå tilbake</Link>
 			</div>
 		</div>
 	)

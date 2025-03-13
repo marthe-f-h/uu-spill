@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { hjemmeIgjenUrl } from '../../../constants'
-import { Alert, Button } from '@navikt/ds-react'
+import { Alert, Button, Checkbox, CheckboxGroup } from '@navikt/ds-react'
 
 export const Treasure = () => {
 	document.title = 'uu game - treasure'
-	const [kode, setKode] = useState<boolean[]>([false, false, false, false])
+	const [kode, setKode] = useState<number[]>([])
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
 	const headingRef = useRef<HTMLHeadingElement>(null)
@@ -16,14 +16,10 @@ export const Treasure = () => {
 		}
 	}, [])
 
-	const oppdaterKode = (index: number) => {
-		const nyKode = [...kode]
-		nyKode[index] = !nyKode[index]
-		setKode(nyKode)
-	}
-
 	const brukKode = () => {
-		setHarRiktigKode(kode[1] && kode[3])
+		if (kode.includes(1) || kode.includes(3)) setHarRiktigKode(false)
+		else if (kode.includes(2) && kode.includes(4)) setHarRiktigKode(true)
+		else setHarRiktigKode(false)
 	}
 
 	return (
@@ -42,6 +38,7 @@ export const Treasure = () => {
 					<li>Treasure chest</li>
 					<li>24</li>
 				</ul>
+
 				<h2>The treasure chest</h2>
 				<form
 					onSubmit={(e) => {
@@ -49,50 +46,17 @@ export const Treasure = () => {
 						brukKode()
 					}}
 				>
-					<fieldset>
-						<legend>Select the numbers in the code</legend>
-						<div>
-							<input
-								type="checkbox"
-								id="c1"
-								name="1"
-								checked={kode[0]}
-								onChange={() => oppdaterKode(0)}
-							/>
-							<label htmlFor="c1">1</label>
-						</div>
-
-						<div>
-							<input
-								type="checkbox"
-								id="c2"
-								name="2"
-								checked={kode[1]}
-								onChange={() => oppdaterKode(1)}
-							/>
-							<label htmlFor="c2">2</label>
-						</div>
-						<div>
-							<input
-								type="checkbox"
-								id="c3"
-								name="3"
-								checked={kode[2]}
-								onChange={() => oppdaterKode(2)}
-							/>
-							<label htmlFor="c3">3</label>
-						</div>
-						<div>
-							<input
-								type="checkbox"
-								id="c4"
-								name="4"
-								checked={kode[3]}
-								onChange={() => oppdaterKode(3)}
-							/>
-							<label htmlFor="c4">4</label>
-						</div>
-					</fieldset>
+					<CheckboxGroup
+						legend="Select the numbers in the code"
+						onChange={setKode}
+						value={kode}
+						size="small"
+					>
+						<Checkbox value={1}>1</Checkbox>
+						<Checkbox value={2}>2</Checkbox>
+						<Checkbox value={3}>3</Checkbox>
+						<Checkbox value={4}>4</Checkbox>
+					</CheckboxGroup>
 					<Button>Try the code</Button>
 				</form>
 			</div>

@@ -29,7 +29,7 @@ export const Beginning = () => {
 					tabIndex={-1}
 					ref={headingRef}
 				>
-					Pirates' treasure
+					The hidden pirate treasure
 				</Heading>
 				<p className="mb-4">
 					You have just anchored off a deserted island. You are

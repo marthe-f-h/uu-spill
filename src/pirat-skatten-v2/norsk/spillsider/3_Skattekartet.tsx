@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import {
 	havetUrl,
 	papegoyensHemmelighetUrl,
-	skipsvraketUrl,
-	startUrl
+	skipsvraketUrl
 } from '../../../constants'
 import img from './Skattekart.png'
 
@@ -23,7 +22,6 @@ function Skattekartet() {
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Skattekartet
 			</h1>
-			<Link to={startUrl}>Gå tilbake til skipsvraket</Link>
 			<img
 				src={img}
 				alt="Skattekart som viser veien fra skuta, rundt palmetreet og frem til grotten der skatten er."

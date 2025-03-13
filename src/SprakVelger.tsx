@@ -14,6 +14,8 @@ export const SprakVelger = () => {
 				setSelectedLanguge(
 					v.target.value === 'engelsk' ? 'engelsk' : 'norsk'
 				)
+				document.documentElement.lang =
+					v.target.value === 'engelsk' ? 'en' : 'no'
 			}}
 		>
 			<option value="norsk">Norsk</option>

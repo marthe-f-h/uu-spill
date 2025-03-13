@@ -39,7 +39,7 @@ export const Parrot = () => {
 					<li>Sword</li>
 				</ul>
 				<h3>The parrot's song about the cave</h3>
-				<ul title="Papegøyens sang om grotten">
+				<ul title="The parrot's song about the caven">
 					<li>Stones</li>
 					<li>Secret door: KRAKEN</li>
 					<li>A treasure</li>
@@ -69,7 +69,8 @@ export const Parrot = () => {
 			)}
 			{harRiktigKode === false && (
 				<Alert variant="error" role="alert">
-					The code is incorrect. Listen to what the parrot is singing and try again.
+					The code is incorrect. Listen to what the parrot is singing
+					and try again.
 				</Alert>
 			)}
 		</div>
