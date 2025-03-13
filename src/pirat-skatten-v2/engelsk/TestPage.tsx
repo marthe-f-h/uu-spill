@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { basePath } from '../../constants'
 
-export const TestSide = () => {
+export const TestPage = () => {
 	const [visAlert, setVisAlert] = useState(false)
 	const headingRef = useRef<HTMLHeadingElement>(null)
 
@@ -31,25 +31,25 @@ export const TestSide = () => {
 				tabIndex={-1}
 				ref={headingRef}
 			>
-				Testside
+				Test page
 			</Heading>
-			<Link as={RouterLink} to={basePath} className='w-fit'>
-				Gå tilbake
+			<Link as={RouterLink} to={basePath} className="w-fit">
+				Go back
 			</Link>
 
-			<BodyShort>Prøv deg frem med skjermleser</BodyShort>
+			<BodyShort>Try it out with a screen reader</BodyShort>
 
 			<Button
 				size="small"
 				className="w-fit"
 				onClick={() => setVisAlert(!visAlert)}
 			>
-				Trykk på meg
+				Click me
 			</Button>
 
 			{visAlert && (
 				<Alert size="small" variant="info" role="alert">
-					Du har trykket på knappen!
+				  You have clicked the button
 				</Alert>
 			)}
 
@@ -60,7 +60,7 @@ export const TestSide = () => {
 				</CheckboxGroup>
 			</div>
 
-			<TextField label="Skriv noe" size="small" className="w-[24rem]" />
+			<TextField label="Write something" size="small" className="w-[24rem]" />
 		</div>
 	)
 }

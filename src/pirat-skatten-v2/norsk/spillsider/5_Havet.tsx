@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { skattekartetUrl } from '../constants'
+import { skattekartetUrl } from '../../../constants'
 
 export const Havet = () => {
 	document.title = 'uu spill - havet'

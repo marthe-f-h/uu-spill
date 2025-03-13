@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { skattekartetUrl } from '../../../constants'
 
-export const Skipsvraket = () => {
-	document.title = 'uu spill - skipsvraket'
+export const Shipwreck = () => {
+	document.title = 'uu game - The shipwreck'
 	const headingRef = useRef<HTMLHeadingElement>(null)
 
 	useEffect(() => {
@@ -16,12 +16,10 @@ export const Skipsvraket = () => {
 		<div className="sr-only">
 			<div>
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
-					Skipsvraket
+					The shipwreck
 				</h1>
-				<p className="mb-4">
-					Her var det bare et skipsvrak, gå tilbake.
-				</p>
-				<Link to={skattekartetUrl}>Gå tilbake</Link>
+				<p className="mb-4">There's just a shipwreck here, go back.</p>
+				<Link to={skattekartetUrl}>Go back</Link>
 			</div>
 		</div>
 	)

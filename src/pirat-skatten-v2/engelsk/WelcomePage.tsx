@@ -2,7 +2,8 @@ import { Heading, Link } from '@navikt/ds-react'
 import { useEffect, useRef } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { startUrl, testUrl } from '../../constants'
-export const Velkomstside = () => {
+
+export const WelcomePage = () => {
 	const headingRef = useRef<HTMLHeadingElement>(null)
 
 	useEffect(() => {
@@ -20,14 +21,14 @@ export const Velkomstside = () => {
 				tabIndex={-1}
 				ref={headingRef}
 			>
-				Velkommen til uuspillet
+			  Welcome to uuspillet
 			</Heading>
 
 			<Link as={RouterLink} to={testUrl} className="mr-6">
-				Test skjermleser
+				Test screen reader
 			</Link>
 			<Link as={RouterLink} to={startUrl}>
-				Start spillet
+				Start the game
 			</Link>
 		</div>
 	)

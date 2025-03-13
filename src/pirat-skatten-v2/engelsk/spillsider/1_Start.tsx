@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { grottensHistorieUrl, skattekartetUrl } from '../../../constants'
 
-function Start() {
-	document.title = 'uu spill - start'
+export const Beginning = () => {
+	document.title = 'uu game - start'
 	const [kode, setKode] = useState('')
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 	const headingRef = useRef<HTMLHeadingElement>(null)
@@ -29,29 +29,27 @@ function Start() {
 					tabIndex={-1}
 					ref={headingRef}
 				>
-					Piratenes skatt
+					Pirates' treasure
 				</Heading>
 				<p className="mb-4">
-					Du har nettopp satt anker ved en øde øy. Du står ved Kaptein
-					Grønnskjeggs skipsvrak på stranden. Du vet det finnes en
-					skatt her på øya, men du må finne den før øya forsvinner i
-					havet.
+					You have just anchored off a deserted island. You are
+					standing by Captain Greenbeard's shipwreck on the beach. You
+					know there is a treasure here on the island, but you must
+					find it before the island disappears into the sea.
 				</p>
 				<Heading level="2" size="xsmall" className="text-2xl mb-2">
-					Kaptein Grønnskjeggs grotte
+					The cave of Captain Greenbeard
 				</Heading>
-				<p>
-					For lenge siden bodde Kaptein Grønnskjegg i denne grotten.{' '}
-				</p>
+				<p>Long ago, Captain Greenbeard lived in this cave. </p>
 				<Link as={RouterLink} to={grottensHistorieUrl}>
-					Les mer om grottens historie.
+					Read more about the history of the cave.
 				</Link>
 				<Heading level="2" size="xsmall" className="mt-6 mb-2 text-2xl">
-					Skattekartet
+					The treasure map
 				</Heading>
 				<p className="mb-2">
-					Du finner en kiste med kodelås. Du må finne koden for å åpne
-					kisten.
+					You find a chest with a combination lock. You must find the
+					code to open the chest.
 				</p>
 				<form
 					onSubmit={(e) => {
@@ -60,14 +58,14 @@ function Start() {
 					}}
 				>
 					<TextField
-						label="Hvor mange år siden fant Kaptein Grønnskjegg grotten?"
+						label="How many years ago did Captain Greenbeard find the cave?"
 						size="small"
 						className="w-[20rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>
 					<Button className="mt-4" size="small">
-						Prøv koden
+						Try the code
 					</Button>
 				</form>
 			</div>
@@ -79,9 +77,9 @@ function Start() {
 					className="mt-4"
 					role="alert"
 				>
-					Koden er riktig! Vil du finne skatten?{' '}
+					The code is correct! Do you want to find the treasure?{' '}
 					<Link as={RouterLink} to={skattekartetUrl}>
-						Da må du lese skattekartet her.
+						Then you need to read the treasure map here.
 					</Link>
 				</Alert>
 			)}
@@ -92,11 +90,10 @@ function Start() {
 					className="mt-4"
 					role="alert"
 				>
-					Koden er feil. Lær mer om grottens historie og prøv igjen.
+					The code is incorrect. Learn more about the cave's history
+					and try again.
 				</Alert>
 			)}
 		</div>
 	)
 }
-
-export default Start

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { hjemmeIgjenUrl } from '../../../constants'
 import { Alert, Button } from '@navikt/ds-react'
 
-function Skatten() {
-	document.title = 'uu spill - skatten'
+export const Treasure = () => {
+	document.title = 'uu game - treasure'
 	const [kode, setKode] = useState<boolean[]>([false, false, false, false])
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
@@ -30,19 +30,19 @@ function Skatten() {
 		<div className="sr-only">
 			<div>
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
-					Skatten
+					The treasure
 				</h1>
-				Du ser en stor kiste, men den er låst fast til en stor stein.
-				<h2>Hulemalerier</h2>
+				<p>You see a large chest, but it is locked to a large rock.</p>
+				<h2>Cave paintings</h2>
 				<p>
-					På veggen ser du gamle hulemalerier. De viser en skattekiste
-					og en kode.
+					On the wall you see old cave paintings. They show a treasure
+					chest and a code.
 				</p>
 				<ul title="Hulemalerier">
-					<li>Skattekiste</li>
+					<li>Treasure chest</li>
 					<li>24</li>
 				</ul>
-				<h2>Skattekisten</h2>
+				<h2>The treasure chest</h2>
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -50,7 +50,7 @@ function Skatten() {
 					}}
 				>
 					<fieldset>
-						<legend>Velg tallene i koden</legend>
+						<legend>Select the numbers in the code</legend>
 						<div>
 							<input
 								type="checkbox"
@@ -93,23 +93,22 @@ function Skatten() {
 							<label htmlFor="c4">4</label>
 						</div>
 					</fieldset>
-					<Button> Prøv koden </Button>
+					<Button>Try the code</Button>
 				</form>
 			</div>
 
 			{harRiktigKode && (
 				<Alert variant="info" role="alert">
-					Koden er riktig og skattekisten er fri!{' '}
-					<Link to={hjemmeIgjenUrl}>Dra hjem med skatten.</Link>
+					The code is correct and the treasure chest is free!{' '}
+					<Link to={hjemmeIgjenUrl}>Go home with the treasure.</Link>
 				</Alert>
 			)}
 			{harRiktigKode === false && (
 				<Alert variant="error" role="alert">
-					Koden er feil. Finn ut hva hulemaleriet viser og prøv igjen.
+					The code is incorrect. Find out what the cave painting shows
+					and try again.
 				</Alert>
 			)}
 		</div>
 	)
 }
-
-export default Skatten

@@ -1,10 +1,10 @@
 import { Link as RouterLink } from 'react-router-dom'
-import { startUrl } from '../../../constants'
 import { Heading, Link } from '@navikt/ds-react'
 import { useEffect, useRef } from 'react'
+import { startUrl } from '../../../constants'
 
-function GrottensHistorie() {
-	document.title = 'uu spill - grottens historie'
+export const CaveHistory = () => {
+	document.title = 'uu game - The history of the cave'
 	const headingRef = useRef<HTMLHeadingElement>(null)
 
 		useEffect(() => {
@@ -21,19 +21,17 @@ function GrottensHistorie() {
 				ref={headingRef}
 				className="outline-none mb-2"
 			>
-				Grottens historie
+				The history of the cave
 			</Heading>
 			<Link as={RouterLink} to={startUrl} className="mb-2">
-				Gå tilbake til skipsvraket
+				Return to the shipwreck
 			</Link>
 			<p>
-				Denne grotten har eksistert siden tidenes morgen. Det sies at
-				den store guden Havsuz som hersket over havet bodde her. For 200
-				år siden fant Kaptein Grønnskjegg grotten og bosatte seg her.
-				Han var en fryktet pirat som herjet havet.
+				This cave has existed since dawn of time. It is said that
+				the great god Havsuz who ruled the sea lived here. 200 years
+				ago, Captain Greenbeard found the cave and settled here. He was
+				the most feared pirate to sail the seven seas.
 			</p>
 		</div>
 	)
 }
-
-export default GrottensHistorie

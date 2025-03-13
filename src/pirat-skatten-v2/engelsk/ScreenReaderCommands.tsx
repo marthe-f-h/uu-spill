@@ -1,13 +1,13 @@
 import { FigureIcon, RobotSmileIcon } from "@navikt/aksel-icons"
-import { Heading, List, Tabs } from '@navikt/ds-react'
-import { SprakVelger } from '../../SprakVelger'
+import { Heading, List, Tabs } from "@navikt/ds-react"
+import { SprakVelger } from "../../SprakVelger"
 
-export const SkjermleserKommandoer = () => {
+export const ScreenReaderCommands = () => {
 	return (
 		<div className="h-screen overflow-auto bg-[#d6ebf4] border border-[#60b1d3] p-3 pb-1 text-black">
 			<SprakVelger />
 			<Heading level="1" size="xsmall">
-				Nyttige skjermleserkommandoer
+				Useful screen reader commands
 			</Heading>
 			<div className="flex gap-4 mt-1">
 				<Tabs defaultValue="voiceover" size="small" className="pt-2">
@@ -26,50 +26,50 @@ export const SkjermleserKommandoer = () => {
 					<Tabs.Panel value="voiceover">
 						<List size="small">
 							<ListItem
-								label="Slå på / av"
-								value="Cmd + F5 (eller trykk Touch ID 3 ganger rakst)"
+								label="Turn on / off"
+								value="Cmd + F5 (or push Touch ID 3 times fast)"
 							/>
-							<ListItem label="Stop lesing" value="Ctrl" />
+							<ListItem label="Stop reading" value="Ctrl" />
 							<ListItem
-								label="Leser neste element"
-								value="Ctrl + Option + piltaster"
+								label="Read next / previous element"
+								value="Ctrl + Option + arrow keys"
 							/>
 							<ListItem
-								label="Åpne rotor"
+								label="Open rotor"
 								value="Ctrl + Option + U"
 							/>
-							<ListItem label="Lukke rotor" value="Esc" />
+							<ListItem label="Close rotor" value="Esc" />
 							<ListItem
-								label="Navigere i rotor"
-								value="Piltaster navigere og Enter for å velge"
+								label="Navigate in rotor"
+								value="Arrow keys navigates and Enter selects"
 							/>
 						</List>
 					</Tabs.Panel>
 					<Tabs.Panel value="narrator">
 						<List size="small">
 							<ListItem
-								label="Slå på / av"
+								label="Turn on / off"
 								value="Ctrl + Windows + Enter"
 							/>
-							<ListItem label="Stop lesing" value="Ctrl" />
+							<ListItem label="Stop reading" value="Ctrl" />
 							<ListItem
-								label="Lese linje for linje"
-								value="Pil opp / ned"
+								label="Read line by line"
+								value="Arrow keys up / down"
 							/>
 							<ListItem
-								label="Åpne elementliste"
+								label="Open list of elements"
 								value="Caps Lock + fn + F5"
 							/>
 							<ListItem
-								label="Gå ut av elementliste"
+								label="Close list of elements"
 								value="Esc"
 							/>
 							<ListItem
-								label="Scanne modus på / av"
-								value="Caps Lock + Mellomrom"
+								label="Scan mode on / off"
+								value="Caps Lock + Space"
 							/>
 							<ListItem
-								label="Lese hele siden"
+								label="Read the entire page"
 								value="Caps Lock + M"
 							/>
 						</List>

@@ -8,8 +8,8 @@ import {
 } from '../../../constants'
 import img from './Skattekart.png'
 
-function Skattekartet() {
-	document.title = 'uu spill - skattekartet'
+export const TreasureMap = () => {
+	document.title = 'uu game - The treasure map'
 	const headingRef = useRef<HTMLHeadingElement>(null)
 
 	useEffect(() => {
@@ -21,20 +21,18 @@ function Skattekartet() {
 	return (
 		<div className="sr-only">
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
-				Skattekartet
+				The treasure map
 			</h1>
-			<Link to={startUrl}>Gå tilbake til skipsvraket</Link>
+			<Link to={startUrl}>Return to the shipwreck</Link>
 			<img
 				src={img}
-				alt="Skattekart som viser veien fra skuta, rundt palmetreet og frem til grotten der skatten er."
+				alt="A treasure map showing the way from the ship, around the palm tree and to the cave where the treasure is."
 				width="500"
 			></img>
-			<p>STOP HER TIL DET ER KLART TIL Å GÅ VIDERE</p>
-			<Link to={skipsvraketUrl}>Gå til skipsvraket</Link>{' '}
-			<Link to={havetUrl}>Gå til havet</Link>{' '}
-			<Link to={papegoyensHemmelighetUrl}>Gå til grotten</Link>
+			<p>STO HERE UNTIL WE ARE READY TO PROCEED</p>
+			<Link to={skipsvraketUrl}>Go to the shipwreck</Link>{' '}
+			<Link to={havetUrl}>Go to the ocean</Link>{' '}
+			<Link to={papegoyensHemmelighetUrl}>Go to the cave</Link>
 		</div>
 	)
 }
-
-export default Skattekartet
