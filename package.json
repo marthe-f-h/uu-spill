@@ -13,6 +13,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@navikt/aksel-icons": "^7.17.2",
+    "@navikt/ds-css": "^7.17.2",
+    "@navikt/ds-react": "^7.17.2",
+    "@navikt/ds-tailwind": "^7.17.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5"

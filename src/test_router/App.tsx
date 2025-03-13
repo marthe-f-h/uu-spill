@@ -1,9 +1,9 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import Start from './Start'
-import { FiksTittel } from './FiksTittel'
 import { FiksIngenting } from './FiksIngenting'
-import { FiksTittelFokusWrapper } from './FiksTittelFokusWrapper'
+import { FiksTittel } from './FiksTittel'
 import { FiksTittelFokusHeading } from './FiksTittelFokusHeading'
+import { FiksTittelFokusWrapper } from './FiksTittelFokusWrapper'
+import Start from './Start'
 
 const basePath = '/uuSpill'
 

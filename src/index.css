@@ -1,11 +1,13 @@
 @import 'tailwindcss';
+@import '@navikt/ds-css' layer(components);
 
 body {
     background-color: black;
     color: #FFF9F0;
 }
 
+/*
 a {
     color: #FFC2C2;
     text-decoration: underline;
-}
+}*/
