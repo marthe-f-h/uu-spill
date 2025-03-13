@@ -1,7 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom'
 import { Heading, Link } from '@navikt/ds-react'
 import { useEffect, useRef } from 'react'
-import { startUrl } from '../../../constants'
+import { startUrl } from '../../constants'
 
 export const CaveHistory = () => {
 	document.title = 'uu game - The history of the cave'

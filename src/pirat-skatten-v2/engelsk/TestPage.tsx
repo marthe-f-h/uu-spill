@@ -10,7 +10,7 @@ import {
 } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { basePath } from '../../constants'
+import { basePath } from '../constants'
 
 export const TestPage = () => {
 	const [visAlert, setVisAlert] = useState(false)

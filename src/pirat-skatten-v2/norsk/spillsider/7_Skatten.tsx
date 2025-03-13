@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { hjemmeIgjenUrl } from '../../../constants'
+import { hjemmeIgjenUrl } from '../../constants'
 import { Alert, Button, Checkbox, CheckboxGroup } from '@navikt/ds-react'
 
 function Skatten() {

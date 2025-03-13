@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { skattekartetUrl } from '../../../constants'
+import { skattekartetUrl } from '../../constants'
 import { useEffect, useRef } from 'react'
 
 export const Havet = () => {

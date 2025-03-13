@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { skattenUrl } from '../../../constants'
+import { skattenUrl } from '../../constants'
 import { Alert, Button, TextField } from '@navikt/ds-react'
 
 function Papegoyen() {

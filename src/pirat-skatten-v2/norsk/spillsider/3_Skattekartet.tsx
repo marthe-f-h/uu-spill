@@ -4,7 +4,7 @@ import {
 	havetUrl,
 	papegoyensHemmelighetUrl,
 	skipsvraketUrl
-} from '../../../constants'
+} from '../../constants'
 import img from './Skattekart.png'
 
 function Skattekartet() {

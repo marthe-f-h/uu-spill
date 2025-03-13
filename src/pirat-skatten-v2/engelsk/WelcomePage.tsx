@@ -1,7 +1,7 @@
 import { Heading, Link } from '@navikt/ds-react'
 import { useEffect, useRef } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { startUrl, testUrl } from '../../constants'
+import { startUrl, testUrl } from '../constants'
 
 export const WelcomePage = () => {
 	const headingRef = useRef<HTMLHeadingElement>(null)

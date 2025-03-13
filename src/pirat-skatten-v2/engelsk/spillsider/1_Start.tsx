@@ -1,7 +1,7 @@
 import { Alert, Button, Heading, Link, TextField } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { grottensHistorieUrl, skattekartetUrl } from '../../../constants'
+import { grottensHistorieUrl, skattekartetUrl } from '../../constants'
 
 export const Beginning = () => {
 	document.title = 'uu game - start'

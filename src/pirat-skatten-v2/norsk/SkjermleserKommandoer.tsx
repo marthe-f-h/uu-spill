@@ -1,6 +1,6 @@
 import { FigureIcon, RobotSmileIcon } from "@navikt/aksel-icons"
 import { Heading, List, Tabs } from '@navikt/ds-react'
-import { SprakVelger } from '../../SprakVelger'
+import { SprakVelger } from '../SprakVelger'
 
 export const SkjermleserKommandoer = () => {
 	return (

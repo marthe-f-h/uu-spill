@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { skattekartetUrl } from '../../../constants'
+import { skattekartetUrl } from '../../constants'
 
 export const Shipwreck = () => {
 	document.title = 'uu game - The shipwreck'
