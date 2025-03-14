@@ -11,6 +11,7 @@ import {
 import { useEffect, useRef, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { basePath } from '../constants'
+import img from '../blueberry.png'
 
 export const TestPage = () => {
 	const [visAlert, setVisAlert] = useState(false)
@@ -49,7 +50,7 @@ export const TestPage = () => {
 
 			{visAlert && (
 				<Alert size="small" variant="info" role="alert">
-				  You have clicked the button
+					You have clicked the button
 				</Alert>
 			)}
 
@@ -60,7 +61,16 @@ export const TestPage = () => {
 				</CheckboxGroup>
 			</div>
 
-			<TextField label="Write something" size="small" className="w-[24rem]" />
+			<div className="border border-[#A86400] p-4 w-fit">
+				<p aria-hidden>Bilde</p>
+				<img src={img} alt="3 blueberries" className="sr-only"></img>
+			</div>
+
+			<TextField
+				label="Write something"
+				size="small"
+				className="w-[24rem]"
+			/>
 		</div>
 	)
 }

@@ -11,6 +11,7 @@ import {
 import { useEffect, useRef, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { basePath } from '../constants'
+import img from '../blueberry.png'
 
 export const TestSide = () => {
 	const [visAlert, setVisAlert] = useState(false)
@@ -58,6 +59,11 @@ export const TestSide = () => {
 					<Checkbox value="car">1</Checkbox>
 					<Checkbox value="taxi">2</Checkbox>
 				</CheckboxGroup>
+			</div>
+
+			<div className="border border-[#A86400] p-4 w-fit">
+				<p aria-hidden>Bilde</p>
+				<img src={img} alt="3 blåbær" className="sr-only"></img>
 			</div>
 
 			<TextField label="Skriv noe" size="small" className="w-[24rem]" />
