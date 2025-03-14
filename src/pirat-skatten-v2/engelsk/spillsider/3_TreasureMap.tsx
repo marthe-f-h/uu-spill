@@ -27,7 +27,6 @@ export const TreasureMap = () => {
 				alt="A treasure map showing the way from the ship, around the palm tree and to the cave where the treasure is."
 				width="500"
 			></img>
-			<p>STOP HERE UNTIL WE ARE READY TO PROCEED</p>
 			<Link to={skipsvraketUrl}>Go to the shipwreck</Link>{' '}
 			<Link to={havetUrl}>Go to the ocean</Link>{' '}
 			<Link to={papegoyensHemmelighetUrl}>Go to the cave</Link>
