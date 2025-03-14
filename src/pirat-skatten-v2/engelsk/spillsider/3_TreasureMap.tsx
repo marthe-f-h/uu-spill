@@ -5,7 +5,7 @@ import {
 	papegoyensHemmelighetUrl,
 	skipsvraketUrl
 } from '../../constants'
-import img from '../../Skattekart.png'
+import img from '../../map.png'
 
 export const TreasureMap = () => {
 	document.title = 'uu game - The treasure map'

@@ -5,7 +5,7 @@ import {
 	papegoyensHemmelighetUrl,
 	skipsvraketUrl
 } from '../../constants'
-import img from '../../Skattekart.png'
+import img from '../../map.png'
 
 function Skattekartet() {
 	document.title = 'uu spill - skattekartet'
