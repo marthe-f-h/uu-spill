@@ -13,7 +13,7 @@ function GrottensHistorie() {
 			}
 		}, [])
 	return (
-		<div className="bg-white h-screen overflow-auto p-4 text-black">
+		<div className="bg-white h-screen overflow-auto p-4 pl-6 text-black">
 			<Heading
 				level="1"
 				size="small"

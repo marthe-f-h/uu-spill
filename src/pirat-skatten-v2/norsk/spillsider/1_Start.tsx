@@ -20,7 +20,7 @@ function Start() {
 	}
 
 	return (
-		<div className="bg-white h-screen overflow-auto p-4 text-black">
+		<div className="bg-white h-screen overflow-auto p-4 pl-6 text-black">
 			<div>
 				<Heading
 					level="1"

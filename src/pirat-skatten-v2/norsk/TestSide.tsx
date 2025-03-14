@@ -23,7 +23,7 @@ export const TestSide = () => {
 	}, [])
 
 	return (
-		<div className="flex flex-col gap-4 bg-white h-screen overflow-auto p-4 text-black">
+		<div className="flex flex-col gap-4 bg-white h-screen overflow-auto p-4 pl-6 text-black">
 			<Heading
 				level="1"
 				size="medium"
@@ -33,7 +33,7 @@ export const TestSide = () => {
 			>
 				Testside
 			</Heading>
-			<Link as={RouterLink} to={basePath} className='w-fit'>
+			<Link as={RouterLink} to={basePath} className="w-fit">
 				Gå tilbake
 			</Link>
 

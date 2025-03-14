@@ -4,7 +4,7 @@ import { SprakVelger } from '../SprakVelger'
 
 export const ScreenReaderCommands = () => {
 	return (
-		<div className="h-screen overflow-auto bg-[#d6ebf4] border border-[#60b1d3] p-3 pb-1 text-black">
+		<div className="h-screen overflow-auto bg-[#ffefd4] border border-[#A86400] p-3 pb-1 text-black">
 			<SprakVelger />
 			<Heading level="1" size="xsmall">
 				Useful screen reader commands

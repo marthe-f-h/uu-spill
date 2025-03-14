@@ -13,7 +13,7 @@ export const CaveHistory = () => {
 			}
 		}, [])
 	return (
-		<div className="bg-white h-screen overflow-auto p-4 text-black">
+		<div className="bg-white h-screen overflow-auto p-4 pl-6 text-black">
 			<Heading
 				level="1"
 				size="small"
@@ -27,10 +27,10 @@ export const CaveHistory = () => {
 				Return to the shipwreck
 			</Link>
 			<p>
-				This cave has existed since dawn of time. It is said that
-				the great god Havsuz who ruled the sea lived here. 200 years
-				ago, Captain Greenbeard found the cave and settled here. He was
-				the most feared pirate to sail the seven seas.
+				This cave has existed since dawn of time. It is said that the
+				great god Havsuz who ruled the sea lived here. 200 years ago,
+				Captain Greenbeard found the cave and settled here. He was the
+				most feared pirate to sail the seven seas.
 			</p>
 		</div>
 	)
