@@ -1,10 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import {
-	havetUrl,
-	papegoyensHemmelighetUrl,
-	skipsvraketUrl
-} from '../../constants'
+import { havetUrl, grottenUrl, skipsvraketUrl } from '../../constants'
 import img from '../../map.png'
 
 export const TreasureMap = () => {
@@ -29,7 +25,7 @@ export const TreasureMap = () => {
 			></img>
 			<Link to={skipsvraketUrl}>Go to the shipwreck</Link>{' '}
 			<Link to={havetUrl}>Go to the ocean</Link>{' '}
-			<Link to={papegoyensHemmelighetUrl}>Go to the cave</Link>
+			<Link to={grottenUrl}>Go to the cave</Link>
 		</div>
 	)
 }

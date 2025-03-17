@@ -62,7 +62,7 @@ export const TestPage = () => {
 			</div>
 
 			<div className="border border-[#A86400] p-4 w-fit">
-				<p aria-hidden>Bilde</p>
+				<p aria-hidden>Image</p>
 				<img src={img} alt="3 blueberries" className="sr-only"></img>
 			</div>
 

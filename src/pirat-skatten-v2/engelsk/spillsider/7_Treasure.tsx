@@ -34,7 +34,7 @@ export const Treasure = () => {
 					On the wall you see old cave paintings. They show a treasure
 					chest and a code.
 				</p>
-				<ul title="Hulemalerier">
+				<ul title="Cave paintings">
 					<li>Treasure chest</li>
 					<li>24</li>
 				</ul>

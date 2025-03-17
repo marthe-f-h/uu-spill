@@ -20,7 +20,7 @@ export const Velkomstside = () => {
 				tabIndex={-1}
 				ref={headingRef}
 			>
-				Velkommen til uuspillet
+				Velkommen til uuSpillet
 			</Heading>
 
 			<Link as={RouterLink} to={testUrl} className="mr-6">

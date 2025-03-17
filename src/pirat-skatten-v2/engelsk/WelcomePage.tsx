@@ -21,7 +21,7 @@ export const WelcomePage = () => {
 				tabIndex={-1}
 				ref={headingRef}
 			>
-			  Welcome to uuspillet
+				Welcome to uuSpillet
 			</Heading>
 
 			<Link as={RouterLink} to={testUrl} className="mr-6">

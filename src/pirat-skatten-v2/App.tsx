@@ -4,7 +4,7 @@ import {
 	grottensHistorieUrl,
 	havetUrl,
 	hjemmeIgjenUrl,
-	papegoyensHemmelighetUrl,
+	grottenUrl,
 	skattekartetUrl,
 	skattenUrl,
 	skipsvraketUrl,
@@ -38,7 +38,6 @@ import { TestPage } from './engelsk/TestPage'
 /**
  * TODO neste gang:
  * Si ifra på forhånd at man må ha med ørepropper / headset?
- * Si at det kan være lurt å skru av notifikasjoner / lukke teams / slack osv.
  */
 
 function App() {
@@ -82,7 +81,7 @@ function App() {
 						element={norsk ? <Skatten /> : <Treasure />}
 					/>
 					<Route
-						path={papegoyensHemmelighetUrl}
+						path={grottenUrl}
 						element={norsk ? <Papegoyen /> : <Parrot />}
 					/>
 					<Route
