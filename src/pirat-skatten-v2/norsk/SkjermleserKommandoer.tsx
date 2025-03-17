@@ -4,7 +4,7 @@ import { SprakVelger } from '../SprakVelger'
 
 export const SkjermleserKommandoer = () => {
 	return (
-		<div className="h-screen overflow-auto bg-[#FFECCC] border border-[#A86400] p-3 pb-1 text-black">
+		<div className="h-screen overflow-auto bg-[#CCE2F0] border-r-2 border-[#00243A] p-3 pb-1 text-black">
 			<SprakVelger />
 			<Heading level="1" size="xsmall">
 				Nyttige skjermleserkommandoer
