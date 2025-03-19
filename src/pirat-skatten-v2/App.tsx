@@ -35,18 +35,15 @@ import HjemmeIgjen from './norsk/spillsider/8_HjemmeIgjen'
 import { Havet } from './norsk/spillsider/5_Havet'
 import { TestPage } from './engelsk/TestPage'
 
-/**
- * TODO neste gang:
- * Si ifra på forhånd at man må ha med ørepropper / headset?
- */
-
 function App() {
 	const { selectedLanguage } = useAppContext()
 	const norsk = selectedLanguage === 'norsk'
 
 	return (
 		<div
-			className="grid"
+			className={`grid ${
+				selectedLanguage === 'norsk' ? 'bg-[#004367]' : 'bg-[#666E00]'
+			} `}
 			style={{
 				gridTemplateColumns: '18rem auto'
 			}}
