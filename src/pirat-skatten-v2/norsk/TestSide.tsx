@@ -5,12 +5,9 @@ import {
 	Checkbox,
 	CheckboxGroup,
 	Heading,
-	Link,
 	TextField
 } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
-import { Link as RouterLink } from 'react-router-dom'
-import { basePath } from '../constants'
 import img from '../blueberry.png'
 
 export const TestSide = () => {
@@ -34,9 +31,6 @@ export const TestSide = () => {
 			>
 				Testside
 			</Heading>
-			<Link as={RouterLink} to={basePath} className="w-fit">
-				Gå tilbake
-			</Link>
 
 			<BodyShort>Prøv deg frem med skjermleser</BodyShort>
 

@@ -11,13 +11,14 @@ export const HomeAtLast = () => {
 	}, [])
 
 	return (
-		<div className="sr-only ">
+		<div>
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Home at last
 			</h1>
 			<p>
 				You've returned home with the treasure! Congratulations! Shout
-				out "I'm home!" to win over the others. ("Jeg er hjemme!" in norwegian)
+				out "I'm home!" to win over the others. ("Jeg er hjemme!" in
+				norwegian)
 			</p>
 		</div>
 	)

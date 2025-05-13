@@ -11,7 +11,7 @@ function HjemmeIgjen() {
 	}, [])
 
 	return (
-		<div className="sr-only ">
+		<div>
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Hjemme i din egen stue
 			</h1>

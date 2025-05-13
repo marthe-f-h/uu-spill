@@ -14,7 +14,7 @@ function Skattekartet() {
 	}, [])
 
 	return (
-		<div className="sr-only">
+		<div className="blur-sm">
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Skattekartet
 			</h1>
@@ -22,6 +22,7 @@ function Skattekartet() {
 				src={img}
 				alt="Skattekart som viser veien fra skuta, rundt palmetreet og frem til grotten der skatten er."
 				width="500"
+				className="blur-lg"
 			></img>
 			<Link to={skipsvraketUrl}>Gå til skipsvraket</Link>{' '}
 			<Link to={havetUrl}>Gå til havet</Link>{' '}

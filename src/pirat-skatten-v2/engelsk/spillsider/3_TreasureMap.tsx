@@ -14,7 +14,7 @@ export const TreasureMap = () => {
 	}, [])
 
 	return (
-		<div className="sr-only">
+		<div className="blur-sm">
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				The treasure map
 			</h1>
@@ -22,6 +22,7 @@ export const TreasureMap = () => {
 				src={img}
 				alt="A treasure map showing the way from the ship, around the palm tree and to the cave where the treasure is."
 				width="500"
+				className="blur-lg"
 			></img>
 			<Link to={skipsvraketUrl}>Go to the shipwreck</Link>{' '}
 			<Link to={havetUrl}>Go to the ocean</Link>{' '}
