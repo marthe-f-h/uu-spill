@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import {
 	basePath,
 	grottensHistorieUrl,
@@ -39,14 +39,15 @@ import { useEffect } from 'react'
 function App() {
 	const { selectedLanguage } = useAppContext()
 	const norsk = selectedLanguage === 'norsk'
+	const navigate = useNavigate()
 
 	useEffect(() => {
 		const redirectPath = sessionStorage.getItem('redirectPath')
 		if (redirectPath) {
 			sessionStorage.removeItem('redirectPath')
-			window.history.replaceState(null, '', redirectPath)
+			navigate(redirectPath, { replace: true })
 		}
-	}, [])
+	}, [navigate])
 
 	return (
 		<div

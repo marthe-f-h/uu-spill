@@ -11,7 +11,7 @@ export const FiksTittelFokusHeading = () => {
 
 	return (
 		<div>
-			<Link to={'/uuSpill'}>Gå tilbake til hovedsiden</Link>
+			<Link to={'/uu-spill'}>Gå tilbake til hovedsiden</Link>
 			<h1 ref={linkRef} tabIndex={-1}>
 				Fiks document.title og fokus heading
 			</h1>

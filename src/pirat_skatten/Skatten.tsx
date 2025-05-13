@@ -87,7 +87,7 @@ function Skatten() {
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
 					Koden er riktig! Skattekisten er fri.{' '}
-					<Link to={'/uuSpill/hjem'}>Dra hjem med skatten.</Link>
+					<Link to={'/uu-spill/hjem'}>Dra hjem med skatten.</Link>
 				</p>
 			)}
 			{harRiktigKode === false && (

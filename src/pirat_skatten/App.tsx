@@ -6,7 +6,7 @@ import Papegoyen from './Papegoyen'
 import Skatten from './Skatten'
 import HjemmeIgjen from './HjemmeIgjen'
 
-const basePath = '/uuSpill'
+const basePath = '/uu-spill'
 
 /**
  * TODO neste gang:

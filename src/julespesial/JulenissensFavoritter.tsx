@@ -4,7 +4,7 @@ function JulenissensFavoritter() {
 	document.title = 'uu spill - julenissens favoritter'
 	return (
 		<div>
-			<Link to={'/uuSpill'}>Gå tilbake</Link>
+			<Link to={'/uu-spill'}>Gå tilbake</Link>
 			<h1>Julenissens favoritter</h1>
 			<h2>Favoritt mat</h2>
 			<ol title="Favoritt mat">

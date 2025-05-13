@@ -57,7 +57,7 @@ function Papegoyen() {
 				<p className="mt-8" role="alert">
 					Koden er riktig! En stor stein i det mørkeste hjørnet
 					beveger seg.{' '}
-					<Link to={'/uuSpill/skatten'}>
+					<Link to={'/uu-spill/skatten'}>
 						Gå gjennom den hemmelige døren.
 					</Link>
 				</p>

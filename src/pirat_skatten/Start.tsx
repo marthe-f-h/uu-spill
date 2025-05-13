@@ -24,7 +24,7 @@ function Start() {
 				<p>
 					For lenge siden bodde Kaptein Grønnskjegg i denne grotten.{' '}
 				</p>
-				<Link to={'/uuSpill/grottens_historie'}>
+				<Link to={'/uu-spill/grottens_historie'}>
 					Les mer om grottens historie.
 				</Link>
 				<h2 className="mt-6 mb-2 text-2xl">Skattekartet</h2>
@@ -57,7 +57,7 @@ function Start() {
 			{harRiktigKode && (
 				<p className="mt-8" role="alert">
 					Koden er riktig! Vil du finne skatten?{' '}
-					<Link to={'/uuSpill/skattekartet'}>
+					<Link to={'/uu-spill/skattekartet'}>
 						Da må du lese skattekartet her.
 					</Link>
 				</p>

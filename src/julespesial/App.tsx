@@ -7,7 +7,7 @@ function App() {
 	return (
 		<main className="sr-only">
 			<Routes>
-				<Route path="/uuSpill" element={<Home />} />
+				<Route path="/uu-spill" element={<Home />} />
 				<Route path="/favoritter" element={<JulenissensFavoritter />} />
 				<Route path="/landsby" element={<Landsby />} />
 			</Routes>

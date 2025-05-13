@@ -24,23 +24,23 @@ function Start() {
 
 			<h2 className="mt-4">Link til intern side</h2>
 			<p>
-				<Link to={'/uuSpill/fiks-ingenting'}>
+				<Link to={'/uu-spill/fiks-ingenting'}>
 					Naviger til siden som ikke gjør noenting.
 				</Link>
 			</p>
 			<p>
-				<Link to={'/uuSpill/fiks-tittel'}>
+				<Link to={'/uu-spill/fiks-tittel'}>
 					Naviger til siden som bare fikser document.title.
 				</Link>
 			</p>
 			<p>
-				<Link to={'/uuSpill/fiks-tittel-fokusw'}>
+				<Link to={'/uu-spill/fiks-tittel-fokusw'}>
 					Naviger til siden som fikser document.title og fokus på
 					wrapper.
 				</Link>
 			</p>
 			<p>
-				<Link to={'/uuSpill/fiks-tittel-fokush1'}>
+				<Link to={'/uu-spill/fiks-tittel-fokush1'}>
 					Naviger til siden som fikser document.title og fokus på h1.
 				</Link>
 			</p>

@@ -7,6 +7,6 @@ export default defineConfig({
 	build: {
 		outDir: 'build'
 	},
-	base: '/uuSpill',
+	base: '/uu-spill',
 	plugins: [react(), tailwindcss()]
 })

@@ -11,7 +11,7 @@ export const FiksTittelFokusWrapper = () => {
 
 	return (
 		<div ref={linkRef} tabIndex={-1}>
-			<Link to={'/uuSpill'}>Gå tilbake til hovedsiden</Link>
+			<Link to={'/uu-spill'}>Gå tilbake til hovedsiden</Link>
 			<h1>Fiks document.title og fokus div-wrapper</h1>
 			<p>Denne siden fikser document.title og setter fokus på div.</p>
 		</div>

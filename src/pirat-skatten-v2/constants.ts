@@ -1,4 +1,4 @@
-export const basePath = '/uuSpill'
+export const basePath = '/uu-spill'
 export const testUrl = `${basePath}/test`
 export const startUrl = `${basePath}/start`
 export const grottensHistorieUrl = `${basePath}/grottens_historie`

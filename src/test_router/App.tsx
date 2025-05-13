@@ -5,7 +5,7 @@ import { FiksTittelFokusHeading } from './FiksTittelFokusHeading'
 import { FiksTittelFokusWrapper } from './FiksTittelFokusWrapper'
 import Start from './Start'
 
-const basePath = '/uuSpill'
+const basePath = '/uu-spill'
 
 function App() {
 	return (
