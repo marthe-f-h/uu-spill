@@ -34,10 +34,19 @@ import { Ocean } from './engelsk/spillsider/5_Ocean'
 import HjemmeIgjen from './norsk/spillsider/8_HjemmeIgjen'
 import { Havet } from './norsk/spillsider/5_Havet'
 import { TestPage } from './engelsk/TestPage'
+import { useEffect } from 'react'
 
 function App() {
 	const { selectedLanguage } = useAppContext()
 	const norsk = selectedLanguage === 'norsk'
+
+	useEffect(() => {
+		const redirectPath = sessionStorage.getItem('redirectPath')
+		if (redirectPath) {
+			sessionStorage.removeItem('redirectPath')
+			window.history.replaceState(null, '', redirectPath)
+		}
+	}, [])
 
 	return (
 		<div
