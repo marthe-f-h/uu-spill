@@ -14,7 +14,7 @@ function Skattekartet() {
 	}, [])
 
 	return (
-		<div className="blur-sm">
+		<div className="blur-sm bg-white h-screen overflow-auto p-4 pl-6 text-black">
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Skattekartet
 			</h1>

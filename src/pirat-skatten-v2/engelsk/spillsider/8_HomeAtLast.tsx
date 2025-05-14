@@ -21,7 +21,7 @@ export const HomeAtLast = () => {
 	}, [])
 
 	return (
-		<div>
+		<div className="bg-white h-screen overflow-auto p-4 pl-6 text-black">
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Home at last
 			</h1>
