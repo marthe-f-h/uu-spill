@@ -18,6 +18,10 @@ function Skattekartet() {
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				Skattekartet
 			</h1>
+			<p>
+				Det blir vanskeligere for deg å se, du har et skattekart over
+				øya, fort deg å les det før du ikke kan se mer.
+			</p>
 			<img
 				src={img}
 				alt="Skattekart som viser veien fra skuta, rundt palmetreet og frem til grotten der skatten er."

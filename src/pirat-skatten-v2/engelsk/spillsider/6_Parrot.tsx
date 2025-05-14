@@ -26,7 +26,11 @@ export const Parrot = () => {
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					The cave
 				</h1>
-				After finding the cave, you see an old parrot.
+				<p>
+					After finding the cave, you find an old parrot. You can no
+					longer see anything.
+				</p>
+
 				<h2>The Parrot's Secret</h2>
 				<p>
 					The parrot has a secret. You try to talk to it, but all it
@@ -45,6 +49,10 @@ export const Parrot = () => {
 					<li>A treasure</li>
 				</ul>
 				<h2>The secret door</h2>
+				<p>
+					You feel your way into the cave and find a door. There is a
+					combination lock on the door.
+				</p>
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -62,8 +70,7 @@ export const Parrot = () => {
 
 			{harRiktigKode && (
 				<Alert variant="info" role="alert">
-					The code is correct! A large stone in the darkest corner is
-					moving.{' '}
+					The code is correct! You hear the door moving.{' '}
 					<Link to={skattenUrl}>Go through the secret door.</Link>
 				</Alert>
 			)}

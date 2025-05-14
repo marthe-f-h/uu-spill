@@ -18,6 +18,10 @@ export const TreasureMap = () => {
 			<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 				The treasure map
 			</h1>
+			<p>
+				It's getting harder for you to see, you have a treasure map of
+				the island, hurry up and read it before you can't see anymore.
+			</p>
 			<img
 				src={img}
 				alt="A treasure map showing the way from the ship, around the palm tree and to the cave where the treasure is."

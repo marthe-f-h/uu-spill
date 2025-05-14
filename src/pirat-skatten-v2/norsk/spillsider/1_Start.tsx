@@ -34,8 +34,9 @@ function Start() {
 				<p className="mb-4">
 					Du har nettopp satt anker ved en øde øy. Du står ved Kaptein
 					Grønnskjeggs skipsvrak på stranden. Du vet det finnes en
-					skatt her på øya, men du må finne den før øya forsvinner i
-					havet.
+					skatt her på øya, men lufta på her er giftig, som gjør at du
+					holder på å bli blind. Fort deg å finne skatten og kom deg
+					hjem før det er for sent!
 				</p>
 				<Heading level="2" size="xsmall" className="text-2xl mb-2">
 					Kaptein Grønnskjeggs grotte

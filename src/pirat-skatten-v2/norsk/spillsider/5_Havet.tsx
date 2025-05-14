@@ -13,7 +13,7 @@ export const Havet = () => {
 	}, [])
 
 	return (
-		<div className="sr-only">
+		<div className="blur-sm">
 			<div>
 				<h1
 					tabIndex={-1}

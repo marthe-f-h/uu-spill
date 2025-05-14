@@ -13,7 +13,7 @@ export const Skipsvraket = () => {
 	}, [])
 
 	return (
-		<div className="sr-only">
+		<div className="blur-sm">
 			<div>
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					Skipsvraket

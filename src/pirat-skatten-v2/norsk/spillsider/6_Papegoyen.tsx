@@ -26,7 +26,11 @@ function Papegoyen() {
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					Grotten
 				</h1>
-				Etter å ha funnet grotten ser du en gammel papegøye.
+				<p>
+					Etter å ha funnet grotten møter du en gammel papegøye. Du
+					kan ikke lenger se noen ting.
+				</p>
+
 				<h2>Papegøyens hemmelighet</h2>
 				<p>
 					Papegøyen har en hemmelighet. Du prøver å snakke med den,
@@ -46,6 +50,10 @@ function Papegoyen() {
 					<li>Skatten</li>
 				</ul>
 				<h2>Den hemmelige døren</h2>
+				<p>
+					Du føler deg frem i grotten og finner en dør. Det er en
+					kodelås på døra.
+				</p>
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -63,8 +71,7 @@ function Papegoyen() {
 
 			{harRiktigKode && (
 				<Alert variant="info" role="alert">
-					Koden er riktig! En stor stein i det mørkeste hjørnet
-					beveger seg.{' '}
+					Koden er riktig! Du hører døra beveger seg.{' '}
 					<Link to={skattenUrl}>Gå gjennom den hemmelige døren.</Link>
 				</Alert>
 			)}

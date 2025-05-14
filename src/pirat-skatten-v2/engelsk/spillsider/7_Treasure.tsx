@@ -28,17 +28,20 @@ export const Treasure = () => {
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					The treasure
 				</h1>
-				<p>You see a large chest, but it is locked to a large rock.</p>
+				<p>
+					The parrot is sitting on your shoulder. It helps you to a
+					chest, but it is secured with a combination lock to the
+					cave.
+				</p>
 				<h2>Cave paintings</h2>
 				<p>
-					On the wall you see old cave paintings. They show a treasure
-					chest and a code.
+					The parrot tells about old cave paintings that are on the
+					wall. They show a treasure chest and a code.
 				</p>
 				<ul title="Cave paintings">
 					<li>Treasure chest</li>
 					<li>24</li>
 				</ul>
-
 				<h2>The treasure chest</h2>
 				<form
 					onSubmit={(e) => {

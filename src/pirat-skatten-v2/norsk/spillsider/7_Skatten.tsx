@@ -28,11 +28,15 @@ function Skatten() {
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					Skatten
 				</h1>
-				Du ser en stor kiste, men den er låst fast til en stor stein.
+				<p>
+					Papegøyen sitter på skulderen din. Den hjelper deg frem til
+					en kiste, men den er låst fast til grotten.
+				</p>
+
 				<h2>Hulemalerier</h2>
 				<p>
-					På veggen ser du gamle hulemalerier. De viser en skattekiste
-					og en kode.
+					Papegøyen forteller om gamle hulemalerier som er på veggen.
+					De viser en skattekiste og en kode.
 				</p>
 				<ul title="Hulemalerier">
 					<li>Skattekiste</li>

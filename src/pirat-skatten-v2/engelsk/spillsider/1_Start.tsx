@@ -34,8 +34,9 @@ export const Beginning = () => {
 				<p className="mb-4">
 					You have just anchored off a deserted island. You are
 					standing by Captain Greenbeard's shipwreck on the beach. You
-					know there is a treasure here on the island, but you must
-					find it before the island disappears into the sea.
+					know there is a treasure here on the island, but the air
+					here is poisonous, which is making you go blind. Hurry up
+					and find the treasure and get home before it's too late!
 				</p>
 				<Heading level="2" size="xsmall" className="text-2xl mb-2">
 					The cave of Captain Greenbeard

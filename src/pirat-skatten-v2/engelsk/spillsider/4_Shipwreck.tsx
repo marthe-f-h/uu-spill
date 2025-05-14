@@ -13,7 +13,7 @@ export const Shipwreck = () => {
 	}, [])
 
 	return (
-		<div className="sr-only">
+		<div className="blur-sm">
 			<div>
 				<h1 tabIndex={-1} ref={headingRef} className="outline-none">
 					The shipwreck
