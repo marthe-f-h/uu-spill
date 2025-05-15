@@ -5,6 +5,7 @@ import {
 	Checkbox,
 	CheckboxGroup,
 	Heading,
+	Table,
 	TextField
 } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
@@ -61,6 +62,39 @@ export const TestSide = () => {
 			</div>
 
 			<TextField label="Skriv noe" size="small" className="w-[24rem]" />
+
+			<Table>
+				<Table.Header>
+					<Table.Row>
+						<Table.HeaderCell scope="col">Frukt</Table.HeaderCell>
+						<Table.HeaderCell scope="col">
+							Pris per kg
+						</Table.HeaderCell>
+						<Table.HeaderCell scope="col">
+							Beholdning
+						</Table.HeaderCell>
+					</Table.Row>
+				</Table.Header>
+				<Table.Body>
+					<Table.Row>
+						<Table.HeaderCell scope="row">Banan</Table.HeaderCell>
+						<Table.DataCell>16 kr</Table.DataCell>
+						<Table.DataCell>0</Table.DataCell>
+					</Table.Row>
+					<Table.Row>
+						<Table.HeaderCell scope="row">Eple</Table.HeaderCell>
+						<Table.DataCell>22 kr</Table.DataCell>
+						<Table.DataCell>20</Table.DataCell>
+					</Table.Row>
+					<Table.Row>
+						<Table.HeaderCell scope="row">
+							Appelsin
+						</Table.HeaderCell>
+						<Table.DataCell>24 kr</Table.DataCell>
+						<Table.DataCell>10</Table.DataCell>
+					</Table.Row>
+				</Table.Body>
+			</Table>
 		</div>
 	)
 }

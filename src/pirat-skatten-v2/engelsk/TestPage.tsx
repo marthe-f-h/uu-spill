@@ -5,6 +5,7 @@ import {
 	Checkbox,
 	CheckboxGroup,
 	Heading,
+	Table,
 	TextField
 } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
@@ -65,6 +66,37 @@ export const TestPage = () => {
 				size="small"
 				className="w-[24rem]"
 			/>
+
+			<Table>
+				<Table.Header>
+					<Table.Row>
+						<Table.HeaderCell scope="col">Fruit</Table.HeaderCell>
+						<Table.HeaderCell scope="col">
+							Price per kg
+						</Table.HeaderCell>
+						<Table.HeaderCell scope="col">
+							Inventory
+						</Table.HeaderCell>
+					</Table.Row>
+				</Table.Header>
+				<Table.Body>
+					<Table.Row>
+						<Table.HeaderCell scope="row">Banana</Table.HeaderCell>
+						<Table.DataCell>16 kr</Table.DataCell>
+						<Table.DataCell>0</Table.DataCell>
+					</Table.Row>
+					<Table.Row>
+						<Table.HeaderCell scope="row">Apple</Table.HeaderCell>
+						<Table.DataCell>22 kr</Table.DataCell>
+						<Table.DataCell>20</Table.DataCell>
+					</Table.Row>
+					<Table.Row>
+						<Table.HeaderCell scope="row">Orange</Table.HeaderCell>
+						<Table.DataCell>24 kr</Table.DataCell>
+						<Table.DataCell>10</Table.DataCell>
+					</Table.Row>
+				</Table.Body>
+			</Table>
 		</div>
 	)
 }
