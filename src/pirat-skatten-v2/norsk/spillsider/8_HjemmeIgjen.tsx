@@ -55,12 +55,7 @@ function HjemmeIgjen() {
 				</Table.Body>
 			</Table>
 
-			<form
-				onSubmit={(e) => {
-					e.preventDefault()
-					brukKode(kode)
-				}}
-			>
+			<div className="flex gap-4 items-end">
 				<TextField
 					label="Hva er koden til kista?"
 					size="small"
@@ -68,10 +63,14 @@ function HjemmeIgjen() {
 					value={kode}
 					onChange={(e) => setKode(e.target.value)}
 				/>
-				<Button className="mt-4" size="small">
+				<Button
+					className="h-fit"
+					size="small"
+					onClick={() => brukKode(kode)}
+				>
 					Prøv koden
 				</Button>
-			</form>
+			</div>
 
 			{harRiktigKode && (
 				<Alert
