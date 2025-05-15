@@ -97,7 +97,7 @@ export const HomeAtLast = () => {
 			<img
 				src={img}
 				alt="3 golden blueberries"
-				className={`w-30 h-20 mt-4 ${harRiktigKode ? '' : 'sr-only'}`}
+				className={`w-30 h-20 mt-4 ${harRiktigKode ? '' : 'hidden'}`}
 			/>
 		</div>
 	)
