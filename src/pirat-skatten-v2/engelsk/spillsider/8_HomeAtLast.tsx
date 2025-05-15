@@ -54,12 +54,8 @@ export const HomeAtLast = () => {
 					))}
 				</Table.Body>
 			</Table>
-			<form
-				onSubmit={(e) => {
-					e.preventDefault()
-					brukKode(kode)
-				}}
-			>
+
+			<div className="flex gap-4 items-end">
 				<TextField
 					label="What is the code for the chest?"
 					size="small"
@@ -67,10 +63,14 @@ export const HomeAtLast = () => {
 					value={kode}
 					onChange={(e) => setKode(e.target.value)}
 				/>
-				<Button className="mt-4" size="small">
+				<Button
+					className="h-fit"
+					size="small"
+					onClick={() => brukKode(kode)}
+				>
 					Try the code
 				</Button>
-			</form>
+			</div>
 
 			{harRiktigKode && (
 				<Alert
