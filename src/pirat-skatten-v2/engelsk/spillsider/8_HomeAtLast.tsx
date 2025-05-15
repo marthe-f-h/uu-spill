@@ -55,7 +55,6 @@ export const HomeAtLast = () => {
 				</Table.Body>
 			</Table>
 			<form
-				className="flex gap-6 items-end"
 				onSubmit={(e) => {
 					e.preventDefault()
 					brukKode(kode)
@@ -68,28 +67,21 @@ export const HomeAtLast = () => {
 					value={kode}
 					onChange={(e) => setKode(e.target.value)}
 				/>
-				<Button className="h-fit" size="small">
+				<Button className="mt-4" size="small">
 					Try the code
 				</Button>
 			</form>
 
 			{harRiktigKode && (
-				<>
-					<Alert
-						variant="info"
-						size="small"
-						className="mt-4"
-						role="alert"
-					>
-						The code is correct! Check out what's in the treasure
-						chest and shout it out to win!
-					</Alert>
-					<img
-						src={img}
-						alt="3 golden blueberries"
-						className="w-30 h-20 mt-4"
-					/>
-				</>
+				<Alert
+					variant="info"
+					size="small"
+					className="mt-4"
+					role="alert"
+				>
+					The code is correct! Check out what's in the treasure chest
+					and shout it out to win!
+				</Alert>
 			)}
 			{harRiktigKode === false && (
 				<Alert
@@ -101,6 +93,12 @@ export const HomeAtLast = () => {
 					The code is incorrect. Try again.
 				</Alert>
 			)}
+
+			<img
+				src={img}
+				alt="3 golden blueberries"
+				className={`w-30 h-20 mt-4 ${harRiktigKode ? '' : 'sr-only'}`}
+			/>
 		</div>
 	)
 }

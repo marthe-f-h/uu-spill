@@ -54,8 +54,8 @@ function HjemmeIgjen() {
 					))}
 				</Table.Body>
 			</Table>
+
 			<form
-				className="flex gap-6 items-end"
 				onSubmit={(e) => {
 					e.preventDefault()
 					brukKode(kode)
@@ -68,28 +68,21 @@ function HjemmeIgjen() {
 					value={kode}
 					onChange={(e) => setKode(e.target.value)}
 				/>
-				<Button className="h-fit" size="small">
+				<Button className="mt-4" size="small">
 					Prøv koden
 				</Button>
 			</form>
 
 			{harRiktigKode && (
-				<>
-					<Alert
-						variant="info"
-						size="small"
-						className="mt-4"
-						role="alert"
-					>
-						Koden er riktig! Sjekk hva som er oppi skattekista og
-						rop det ut for å vinne!
-					</Alert>
-					<img
-						src={img}
-						alt="3 gullblåbær"
-						className="w-30 h-20 mt-4"
-					/>
-				</>
+				<Alert
+					variant="info"
+					size="small"
+					className="mt-4"
+					role="alert"
+				>
+					Koden er riktig! Sjekk hva som er oppi skattekista og rop
+					det ut for å vinne!
+				</Alert>
 			)}
 			{harRiktigKode === false && (
 				<Alert
@@ -101,6 +94,12 @@ function HjemmeIgjen() {
 					Koden er feil. Prøv igjen.
 				</Alert>
 			)}
+
+			<img
+				src={img}
+				alt="3 gullblåbær"
+				className={`w-30 h-20 mt-4 ${harRiktigKode ? '' : 'hidden'}`}
+			/>
 		</div>
 	)
 }
